@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 
 function Parent() {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleClick = () => {
-    setShowModal(true);
-  };
-
-  return (
-    <div className="parent">
-      <Child showModal={showModal} handleClick={handleClick} />
-    </div>
-  );
-}
-
+    const [showModal, setShowModal] = useState(false);
+  
+    const handleClick = () => {
+      setShowModal(true);
+    };
+  
+    return (
+      <div className="parent">
+        <h1>Parent Component</h1>
+        <h3>Child Component</h3>
+        <Child showModal={showModal} handleClick={handleClick} />
+      </div>
+    );
+  }
+  
 function Child(props) {
   return (
     <div>
@@ -24,12 +26,12 @@ function Child(props) {
 }
 
 function Modal() {
-  return (
-    <div className="modal">
-      <h1>Modal Content</h1>
-      <h3>This is the modal content.</h3>
-    </div>
-  );
-}
+    return (
+      <div className="modal">
+        <h1>Modal Content</h1>
+        <p>This is the modal content.</p>
+      </div>
+    );
+  }
 
 export default Parent;
