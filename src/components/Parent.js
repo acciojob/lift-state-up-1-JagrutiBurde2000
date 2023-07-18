@@ -27,7 +27,7 @@ function Modal() {
   return (
     <div className="modal">
       <h1>Modal Content</h1>
-      <p>This is the modal content.</p>
+      <h3>This is the modal content.</h3>
     </div>
   );
 }
