@@ -28,7 +28,7 @@ function Child(props) {
 function Modal() {
     return (
       <div className="modal">
-        <h1>Modal Content</h1>
+        <h4>Modal Content</h4>
         <p>This is the modal content.</p>
       </div>
     );
